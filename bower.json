@@ -1,0 +1,28 @@
+{
+  "name": "pyconminioska",
+  "version": "1.0.0",
+  "authors": [
+    "Nobuo Okada <bulbulpaul0325@gmail.com>"
+  ],
+  "description": "PyCon mini Osaka WebPage",
+  "main": "index.html",
+  "keywords": [
+    "PyCon"
+  ],
+  "license": "GNU GENERAL PUBLIC LICENSE Version 3",
+  "homepage": "https://github.com/pyconminiosaka/pyconminiosaka",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "ionicons": "~2.0.1",
+    "isotope": "~2.2.1",
+    "smooth-scroll": "~7.0.0"
+  }
+}
