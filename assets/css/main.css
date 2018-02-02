@@ -370,6 +370,20 @@ ul li {
     margin-left: 0;
   }
 }
+
+/*
+ * Top
+ */
+#logo_top {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#theme {
+  margin-bottom: 25px;
+}
+
 /* 
  * Section
  */
