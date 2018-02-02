@@ -399,6 +399,11 @@ ul li {
 /* 
  * Section: Speaker
  */
+#speaker_kn {
+  height: 250px;
+  width: 250px;
+}
+
 .speaker {
   text-align: center;
   color: #313131;
