@@ -677,3 +677,24 @@ ul li {
     text-align: center;
     background: #f7f7f7;
 }
+
+.btn-yellow {
+  color: #2D2D2D;
+  background-color: #FFD34D;
+}
+
+.btn-yellow:hover, .btn-black:focus {
+  color: #2D2D2D;
+  background-color: #FFD34D;
+}
+
+.site-header .intro .social-links {
+  margin-top: 25px;
+}
+
+.site-header .intro .social-link-button {
+  text-transform: none;
+  border-radius: 5%;
+  max-height: 21px;
+  line-height: 11px;
+}
