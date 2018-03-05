@@ -485,6 +485,9 @@ ul li {
 .partner .partner-box:hover {
   opacity: 1;
 }
+.partner .decided {
+  opacity: 0.8;
+}
 .partner .partner-box-1 {
   background: url(../images/partner/partner-1.png) no-repeat center center/contain;
 }
