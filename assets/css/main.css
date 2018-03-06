@@ -482,6 +482,10 @@ ul li {
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
 }
+.partner .main {
+  height: 250px;
+  width: 250px;
+}
 .partner .partner-box:hover {
   opacity: 1;
 }
