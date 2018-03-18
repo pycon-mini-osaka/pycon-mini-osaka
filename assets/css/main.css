@@ -717,3 +717,23 @@ ul li {
 #cfp-status .cfp-number {
   font-size: 1.1em;
 }
+
+.staff-list li  {
+  list-style: none;
+  /*background-image: url(../images/partner/partner-9.png);*/
+}
+
+.staff-list li span {
+  margin-right: 10px;
+  color: #518CBC;
+}
+
+.staff-list li a {
+  text-decoration: underline;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#committee {
+  margin-top: 30px;
+}
