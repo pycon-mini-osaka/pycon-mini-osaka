@@ -705,3 +705,15 @@ ul li {
   max-height: 21px;
   line-height: 11px;
 }
+
+#cfp-status {
+  margin-top: 35px;
+  color: #ffea38;
+  font-weight: 500;
+}
+
+#cfp-status .cfp-category {}
+
+#cfp-status .cfp-number {
+  font-size: 1.1em;
+}
