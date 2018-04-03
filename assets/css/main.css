@@ -476,15 +476,15 @@ ul li {
 .partner .partner-box {
   display: block;
   opacity: 0.3;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   margin: 25px auto;
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
 }
 .partner .main {
-  height: 250px;
-  width: 250px;
+  height: 400px;
+  width: 400px;
 }
 .partner .partner-box:hover {
   opacity: 1;
@@ -501,24 +501,7 @@ ul li {
 .partner .partner-box-3 {
   background: url(../images/partner/partner-3.png) no-repeat center center/contain;
 }
-.partner .partner-box-4 {
-  background: url(../images/partner/partner-4.png) no-repeat center center/contain;
-}
-.partner .partner-box-5 {
-  background: url(../images/partner/partner-5.png) no-repeat center center/contain;
-}
-.partner .partner-box-6 {
-  background: url(../images/partner/partner-6.png) no-repeat center center/contain;
-}
-.partner .partner-box-7 {
-  background: url(../images/partner/partner-7.png) no-repeat center center/contain;
-}
-.partner .partner-box-8 {
-  background: url(../images/partner/partner-8.png) no-repeat center center/contain;
-}
-.partner .partner-box-9 {
-  background: url(../images/partner/partner-9.png) no-repeat center center/contain;
-}
+
 /* 
  * Section: FAQ
  */
@@ -736,4 +719,17 @@ ul li {
 
 #committee {
   margin-top: 30px;
+}
+
+#htag {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: none;
+  color: #ffd4b0;
+}
+
+#htag a {
+  color: #ffd4b0;
+  font-size: 21px;
 }
