@@ -476,15 +476,15 @@ ul li {
 .partner .partner-box {
   display: block;
   opacity: 0.3;
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   margin: 25px auto;
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
 }
 .partner .main {
-  height: 400px;
-  width: 400px;
+  height: 380px;
+  width: 380px;
 }
 .partner .partner-box:hover {
   opacity: 1;
@@ -690,7 +690,7 @@ ul li {
 }
 
 #cfp-status {
-  margin-top: 35px;
+  margin-bottom: 50px;
   color: #ffea38;
   font-weight: 500;
 }
