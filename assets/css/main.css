@@ -737,15 +737,21 @@ ul li {
 .cfp-title {
   font-weight: bold;
   text-align: left;
-  margin-bottom: 12px;
 }
 
 .speaker-name {
-  font-size: 0.9em;
   text-align: left;
+  font-size: 0.9em;
 }
 
 .cfp-category {
+  margin-top: 5px;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.cfp-content {
+  margin-top: 14px;
   font-size: 0.9em;
   text-align: left;
 }
