@@ -733,3 +733,25 @@ ul li {
   color: #ffd4b0;
   font-size: 21px;
 }
+
+.cfp-title {
+  font-weight: bold;
+  text-align: left;
+}
+
+.speaker-name {
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.cfp-category {
+  margin-top: 5px;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.cfp-content {
+  margin-top: 14px;
+  font-size: 0.9em;
+  text-align: left;
+}
