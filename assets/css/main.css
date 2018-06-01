@@ -698,6 +698,10 @@ ul li {
   line-height: 11px;
 }
 
+.connpass-link {
+  border-radius: 5%;
+}
+
 #cfp-status {
   margin-bottom: 50px;
   color: #ffea38;
