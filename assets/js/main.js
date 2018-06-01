@@ -2,21 +2,21 @@
  * Change Navbar color while scrolling
 */
 
-$(window).scroll(function(){
+$(window).scroll(function () {
 	handleTopNavAnimation();
 });
 
-$(window).load(function(){
+$(window).load(function () {
 	handleTopNavAnimation();
 });
 
 function handleTopNavAnimation() {
-	var top=$(window).scrollTop();
+	var top = $(window).scrollTop();
 
-	if(top>10){
+	if (top > 10) {
 		$('#site-nav').addClass('navbar-solid');
 	}
-	else{
+	else {
 		$('#site-nav').removeClass('navbar-solid');
 	}
 }
@@ -24,40 +24,40 @@ function handleTopNavAnimation() {
 /*
  * Replace all SVG images with inline SVG
  */
-document.querySelectorAll('.file-icon').forEach(function(img){
+document.querySelectorAll('.file-icon').forEach(function (img) {
 	var imgID = img.id;
 	var imgClass = img.className;
 	var imgURL = img.src;
 
-	fetch(imgURL).then(function(response) {
-			return response.text();
-	}).then(function(text){
+	fetch(imgURL).then(function (response) {
+		return response.text();
+	}).then(function (text) {
 
-			var parser = new DOMParser();
-			var xmlDoc = parser.parseFromString(text, "text/xml");
+		var parser = new DOMParser();
+		var xmlDoc = parser.parseFromString(text, "text/xml");
 
-			// Get the SVG tag, ignore the rest
-			var svg = xmlDoc.getElementsByTagName('svg')[0];
+		// Get the SVG tag, ignore the rest
+		var svg = xmlDoc.getElementsByTagName('svg')[0];
 
-			// Add replaced image's ID to the new SVG
-			if(typeof imgID !== 'undefined') {
-					svg.setAttribute('id', imgID);
-			}
-			// Add replaced image's classes to the new SVG
-			if(typeof imgClass !== 'undefined') {
-					svg.setAttribute('class', imgClass+' replaced-svg');
-			}
+		// Add replaced image's ID to the new SVG
+		if (typeof imgID !== 'undefined') {
+			svg.setAttribute('id', imgID);
+		}
+		// Add replaced image's classes to the new SVG
+		if (typeof imgClass !== 'undefined') {
+			svg.setAttribute('class', imgClass + ' replaced-svg');
+		}
 
-			// Remove any invalid XML tags as per http://validator.w3.org
-			svg.removeAttribute('xmlns:a');
+		// Remove any invalid XML tags as per http://validator.w3.org
+		svg.removeAttribute('xmlns:a');
 
-			// Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-			if(!svg.getAttribute('viewBox') && svg.getAttribute('height') && svg.getAttribute('width')) {
-					svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))
-			}
+		// Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+		if (!svg.getAttribute('viewBox') && svg.getAttribute('height') && svg.getAttribute('width')) {
+			svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))
+		}
 
-			// Replace image with new SVG
-			img.parentNode.replaceChild(svg, img);
+		// Replace image with new SVG
+		img.parentNode.replaceChild(svg, img);
 
 	});
 
